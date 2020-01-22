@@ -1,0 +1,458 @@
+/*  Global  */
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  overflow-y: hidden !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Navigation */
+.navbar {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar .navbar-brand img {
+  width: 20vmin;
+}
+
+.navbar-nav .nav-item a {
+  margin: 0 0 0 2vmin;
+  color: rgb(138, 43, 226) !important;
+  font-weight: 400;
+}
+
+.navbar-nav .active a {
+  color: rgb(101, 54, 145) !important;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 60%,
+      rgb(198, 175, 252) 40%);
+  font-weight: 600;
+  width: auto;
+}
+
+.nav-btn {
+  margin: 0.5vmin 2vmin;
+  padding: 0.4vmin 2vmin;
+  background: rgb(243, 205, 255);
+  border: 1px solid rgb(82, 21, 161) !important;
+  color: rgb(72, 27, 155);
+  border-radius: 1.3vmin;
+  box-shadow: 2px 3px rgb(243, 205, 255);
+  background-position: right 20px bottom 10px;
+}
+
+.nav-btn:hover {
+  background-color: rgb(189, 156, 243) !important;
+  box-shadow: 2px 3px rgb(189, 156, 243);
+}
+
+.btn-active {
+  margin: 0.5vmin 2vmin;
+  padding: 0.4vmin 2vmin;
+  background: rgb(189, 196, 255);
+  border: 1px solid rgb(82, 21, 161) !important;
+  color: rgb(72, 27, 155);
+  border-radius: 1.3vmin;
+  box-shadow: 2px 3px rgb(189, 196, 255);
+  background-position: right 20px bottom 10px;
+}
+
+.nav-item small {
+  font-size: 0.8em;
+}
+
+.navbar-toggler i {
+  color: rgb(138, 43, 226);
+  font-size: 1.8rem;
+}
+
+/* +++++++ Main Section +++++++ */
+
+/* Welcome page */
+.jumbotron {
+  min-height: 60vmin;
+  border-radius: 0 !important;
+  background: url(../img/plane-04.png) no-repeat center rgb(83, 27, 172);
+}
+
+.jumbotron .container {
+  padding-top: 10vmin;
+}
+
+.jumbotron h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  overflow-y: hidden;
+}
+
+.jumbotron h2 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  color: rgb(243, 205, 255);
+  overflow-y: hidden;
+}
+
+.jumbotron .demo {
+  margin-left: 5vmin;
+  color: rgb(255, 255, 255);
+  background: none;
+}
+
+.jumbotron .demo i {
+  margin-right: 1vmin;
+  vertical-align: middle;
+  color: rgb(198, 145, 241);
+}
+
+.jumbotron .demo span {
+  border-bottom: 2px solid rgb(198, 145, 241);
+}
+
+/* About page */
+
+.about .container {
+  padding: 15vmin 3vmin;
+  border-bottom: 2px solid rgb(83, 27, 172);
+}
+
+.about .card {
+  border: none;
+  box-shadow: 0 0 20px rgba(111, 100, 124, 0.15);
+}
+
+.about .card .card-header {
+  background: rgb(255, 255, 255);
+  color: rgb(138, 43, 226);
+  border: none;
+  padding: 5vmin 2vmin 0 3vmin;
+}
+
+.about .card .card-header h3 {
+  font-weight: 700;
+}
+
+.about .card .card-body {
+  color: rgb(116, 116, 116);
+  padding: 2vmin 3vmin;
+  font-size: 1em;
+}
+
+/* Get started page */
+
+.get-started .card {
+  margin: 5vmin 0;
+  border: none;
+}
+
+.get-started .card .card-header {
+  background: transparent;
+  color: rgb(138, 43, 226);
+  border: none;
+  padding: 5vmin 2vmin 0 2vmin;
+}
+
+.get-started .card .card-header h3 {
+  font-weight: 700;
+}
+
+.get-started .card .card-body h5 {
+  color: rgb(97, 88, 105) !important;
+  font-weight: 700;
+}
+
+.get-started .card .card-body p {
+  color: rgb(116, 116, 116);
+  font-size: 1em;
+}
+
+.get-started .card .card-body a {
+  color: rgb(138, 43, 226);
+  font-size: 1em;
+  border-bottom: 2px solid rgb(138, 43, 226);
+}
+
+.get-started .card .card-body img {
+  position: relative;
+  width: 100%;
+}
+
+/* Curve background */
+.curve-bg svg {
+  margin-top: 0 !important;
+  height: 100%;
+  width: 100%;
+}
+
+.curve-bg path {
+  stroke: none;
+  fill: rgb(83, 27, 172);
+}
+
+/* blog */
+.blog {
+  margin: 0;
+  min-height: 70vmin;
+  border-radius: 0 !important;
+  background: rgb(83, 27, 172);
+}
+
+.blog .card {
+  background: transparent;
+  border: none;
+}
+
+.blog .card .card-body img {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.blog .card .card-body h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.blog .card .card-body p {
+  color: rgb(243, 205, 255);
+  font-size: 1em;
+}
+
+.blog .card .card-body a {
+  color: rgb(251, 240, 255);
+  font-size: 1em;
+  border-bottom: 2px solid rgb(251, 240, 255);
+}
+
+/* Pricing Section */
+.pricing {
+  min-height: 60vmin;
+  padding: 15vmin 0 0 0;
+}
+
+.pricing .container {
+  border-bottom: 2px solid rgb(83, 27, 172);
+  padding: 0 0 8vmin 0;
+}
+
+.pricing .card {
+  background: transparent;
+  border: none;
+}
+
+.pricing .card h4 {
+  padding: 3vmin 0 1vmin 0;
+  font-weight: 600;
+}
+
+.pricing .card p {
+  font-weight: 600;
+}
+
+.range-selector {
+  padding-bottom: 18vmin;
+}
+
+.pricing .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 13px;
+  border-radius: 5px;
+  background: rgb(234, 234, 234);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.pricing .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: rgb(122, 63, 216);
+  border: 6px solid rgb(241, 171, 243);
+  cursor: pointer;
+}
+
+.pricing .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(122, 63, 216);
+  border: 6px solid rgb(241, 171, 243);
+  cursor: pointer;
+}
+
+.pricing .price-breakdown {
+  padding: 3vmin 0 0 0;
+}
+
+.pricing .card-breakdown {
+  background-color: rgb(102, 58, 160);
+  padding: 2vmin;
+}
+
+.pricing .card-breakdown h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 1vmin 0;
+}
+
+.pricing .card-breakdown h5 {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 1vmin 0;
+}
+
+.pricing .card-breakdown p {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.pricing .card-breakdown h4 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+.see-link {
+  padding-left: 5vmin;
+}
+
+.see-breakdown {
+  color: rgb(251, 240, 255);
+  font-size: 1em;
+  border-bottom: 2px solid rgb(251, 240, 255);
+}
+
+.see-breakdown:hover {
+  color: rgb(251, 240, 255);
+}
+
+/* faq */
+.faq {
+  padding: 8vmin 0;
+}
+
+.faq .card {
+  background: transparent;
+  border: none;
+}
+
+.faq .card .card-header {
+  background: transparent;
+  border: none;
+}
+
+.faq .card .card-header h3 {
+  color: rgb(138, 43, 226);
+  font-weight: 700;
+}
+
+.faq .card-body p {
+  padding: 1.5vmin 0;
+  font-size: 1rem;
+  color: rgb(116, 116, 116);
+  border-bottom: 2px solid rgb(136, 136, 136);
+}
+
+.faq .card-body span {
+  position: relative;
+  float: right;
+}
+
+.faq .card-body button {
+  background: none;
+  border: none;
+  color: rgb(83, 27, 172);
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  background: url(../img/footer-12.png) no-repeat 2vmin rgb(36, 31, 63);
+}
+
+.footer .links {
+  margin: 8vmin 10vmin;
+}
+
+.footer h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.footer li {
+  margin: 1.5vmin 0;
+}
+
+.footer a {
+  color: rgb(194, 194, 194);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.footer .social-icon {
+  padding: 3vmin;
+  text-align: center;
+}
+
+.footer .social-icon img {
+  width: 3em;
+  margin: 0 1vmin;
+}
+
+.footer .break {
+  border-bottom: 1px solid rgb(136, 136, 136);
+}
+
+.footer .data-policy {
+  padding-left: 3vmin;
+}
+
+.footer .data-links {
+  text-align: center;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: rgb(194, 194, 194);
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .navbar-brand img {
+    width: 25vmin;
+  }
+
+  .about .container {
+    padding: 4vmin 3vmin;
+  }
+
+  .about .card {
+    margin-bottom: 5vmin;
+  }
+}
