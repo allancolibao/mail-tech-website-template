@@ -1,7 +1,11 @@
-Mailer Tech Website Template
+#Mailer Tech Website Template
 
 This website template are build with HTML, CSS , BOOTSTRAP, and JQUERY by Allan Colibao.
 
-visit me @ arcdev.me
+See [Simple Mailer Tech Website](https://allancolibao.github.io/mail-tech-website-template/).
+
+@arcdev2019
+
+See [My Portfolio](https://arcdev.me).
 
 feel free to use :)
